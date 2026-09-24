@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vinci-red: #E3182D;
+  --color-vinci-red-dark: #B8111F;
+  --color-ink: #1A1A1A;
+  --color-muted: #8C8C8C;
+  --color-line: #E6E6E6;
+  --color-paper: #FFFFFF;
+
+  --font-display: "Genos", "Eurostile", sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink font-body antialiased; }
+  :focus-visible { outline: 2px solid var(--color-vinci-red); outline-offset: 3px; }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-display text-[15px] uppercase tracking-[0.12em] text-muted hover:text-ink;
+  }
+
+  .nav-link.ativo {
+    @apply text-ink;
+  }
+
+  .mobile-link {
+    @apply block border-b border-line py-5 font-display text-lg uppercase tracking-[0.12em] text-muted;
+  }
+
+  .modelo-card {
+    @apply flex flex-col items-center text-center;
+  }
+
+  .modelo-card img {
+    @apply h-auto w-full max-w-[160px];
+  }
+
+  .modelo-nome {
+    @apply mt-3 font-display text-[14px] uppercase tracking-[0.12em] text-ink;
+  }
+
+  .modelo-links {
+    @apply mt-1 flex gap-4 text-[10px] text-muted;
+  }
+
+  .navegue-link {
+    @apply font-display text-[14px] uppercase tracking-[0.12em] hover:text-vinci-red;
+  }
+
+  .eyebrow {
+    @apply font-display text-[14px] uppercase tracking-[0.12em] text-muted;
+  }
+
+  .footer-titulo {
+    @apply font-display text-[15px] uppercase tracking-[0.3em] text-ink;
+  }
+
+  .footer-link {
+    @apply text-[11px] tracking-[0.3em] text-muted hover:text-ink;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center whitespace-nowrap px-4 py-3 sm:px-10 font-display text-[14px] uppercase tracking-[0.12em] bg-vinci-red text-white hover:bg-vinci-red-dark;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center whitespace-nowrap px-4 py-3 sm:px-10 font-display text-[14px] uppercase tracking-[0.12em] border border-ink text-ink hover:bg-ink hover:text-white;
+  }
+
+  .btn-secondary-light {
+    @apply inline-flex items-center justify-center whitespace-nowrap px-4 py-3 sm:px-10 font-display text-[14px] uppercase tracking-[0.12em] border border-white text-white hover:bg-white hover:text-ink;
+  }
+
+  .wordmark {
+    @apply font-display text-base uppercase leading-loose tracking-[0.5em] text-ink;
+  }
+
+  .specs {
+    @apply grid grid-cols-[auto_1fr] gap-x-6 gap-y-1 text-[12px] tracking-[0.1em];
+  }
+
+  .specs dt {
+    @apply font-medium text-ink;
+  }
+
+  .specs dd {
+    @apply text-muted;
+  }
+
+  .link-conheca {
+    @apply font-display text-[14px] uppercase tracking-[0.12em] text-ink underline underline-offset-4 hover:text-vinci-red;
+  }
+
+  .cta-link {
+    @apply flex items-center justify-between py-2 font-display text-3xl uppercase tracking-[0.02em] text-ink hover:text-vinci-red lg:text-5xl;
+  }
+
+  .cta-seta {
+    @apply shrink-0 transition-transform duration-200 ease-out group-hover:translate-x-1;
+  }
+
+  .titulo-secao {
+    @apply font-display text-2xl uppercase tracking-[0.02em] text-ink lg:text-3xl;
+  }
+
+  .stat {
+    @apply py-6 text-center sm:py-0;
+  }
+
+  .stat-numero {
+    @apply font-display text-4xl uppercase text-ink lg:text-5xl;
+  }
+
+  .stat-legenda {
+    @apply mt-2 text-[12px] uppercase tracking-[0.12em] text-muted;
+  }
+
+  .feature {
+    @apply flex flex-col border-line lg:border-l lg:first-of-type:border-l-0;
+  }
+
+  .feature-texto {
+    @apply flex-1 px-6 py-8;
+  }
+
+  .feature-titulo {
+    @apply font-display text-[17px] uppercase tracking-[0.05em] text-ink;
+  }
+
+  .feature-descricao {
+    @apply mt-3 text-[13px] leading-[1.8] text-muted;
+  }
+
+  .feature-foto {
+    @apply h-56 w-full bg-line object-cover;
+  }
+
+  .legenda-item {
+    @apply flex items-center gap-3 text-[12px] uppercase tracking-[0.1em] text-muted;
+  }
+
+  .badge {
+    @apply flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-vinci-red text-[10px] font-medium text-white;
+  }
+
+  .hotspot {
+    @apply absolute flex h-[22px] w-[22px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-vinci-red text-[10px] font-medium text-white;
+  }
+
+  .faq-item {
+    @apply flex items-center justify-between gap-6 border-b border-line py-6 font-display text-[15px] uppercase tracking-[0.05em] text-ink;
+  }
+
+  .faq-seta {
+    @apply shrink-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

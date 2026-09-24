@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VINCI | Veículos elétricos</title>
+    <link rel="icon" type="image/png" href="assets/icons/Logo.png">
+    <meta name="description"
+        content="VINCI, montadora de veículos elétricos. Conheça os modelos e agende um test drive.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body data-pagina="home">
+    <div id="header"></div>
+
+    <main>
+
+        <section class="relative h-[80vh] min-h-[480px] max-h-[760px] overflow-hidden bg-ink">
+            <img src="assets/car-banner-1%201.png" width="1440" height="637" fetchpriority="high"
+                class="absolute inset-0 h-full w-full object-cover object-[70%_center]">
+
+            <div
+                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent lg:bg-linear-to-r lg:from-black/70 lg:via-black/30">
+            </div>
+
+            <div
+                class="relative mx-auto flex h-full max-w-[1280px] items-end px-6 pb-16 lg:items-center lg:px-10 lg:pb-0">
+                <div class="max-w-xl">
+                    <h1 class="font-display text-4xl uppercase tracking-[0.02em] text-white lg:text-6xl">
+                        Vinci Model V3
+                    </h1>
+                    <p class="mt-4 text-sm leading-[1.8] font-light text-white lg:text-[15px]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever.
+                    </p>
+                    <div class="mt-8 flex gap-3">
+                        <a href="modelo-v2.html" class="btn-primary flex-1 sm:w-48 sm:flex-none">Modelos</a>
+                        <a href="#test-drive" class="btn-secondary-light flex-1 sm:w-48 sm:flex-none">Test Drive</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-[1280px] px-6 py-20 lg:px-10 lg:py-28">
+            <h2 class="sr-only">Compare os modelos</h2>
+
+            <div class="grid gap-20 lg:grid-cols-2 lg:gap-16">
+
+                <article class="flex flex-col">
+                    <div class="flex flex-wrap justify-between gap-6">
+                        <h3 class="wordmark">Vinci<br>Model V2</h3>
+                        <dl class="specs">
+                            <dt>Potência:</dt>
+                            <dd>300 cavalos</dd>
+                            <dt>Autonomia:</dt>
+                            <dd>500 km por carga</dd>
+                            <dt>Peso:</dt>
+                            <dd>1.500 kg</dd>
+                            <dt>Tecnologia:</dt>
+                            <dd>GPS e Smartlink</dd>
+                        </dl>
+                    </div>
+
+                    <a href="modelo-v2.html" class="mx-auto mt-4 mb-12 block w-full max-w-md">
+                        <img src="assets/Model v2.png" width="529" height="425" loading="lazy" class="h-auto w-full">
+                    </a>
+
+                    <div class="mt-auto flex items-center justify-between gap-4">
+                        <p class="text-[11px] tracking-[0.3em] text-muted">A SUV mais robusta da categoria</p>
+                        <a href="modelo-v2.html" class="link-conheca">Conheça</a>
+                    </div>
+                </article>
+
+                <article class="flex flex-col">
+                    <div class="flex flex-wrap justify-between gap-6">
+                        <h3 class="wordmark">Vinci<br>Model V1</h3>
+                        <dl class="specs">
+                            <dt>Potência:</dt>
+                            <dd>300 cavalos</dd>
+                            <dt>Autonomia:</dt>
+                            <dd>500 km por carga</dd>
+                            <dt>Peso:</dt>
+                            <dd>1.500 kg</dd>
+                            <dt>Tecnologia:</dt>
+                            <dd>GPS e Smartlink</dd>
+                        </dl>
+                    </div>
+
+                    <a href="#" class="mx-auto mt-4 mb-12 block w-full max-w-md">
+                        <img src="assets/Model v1.png" width="569" height="458" loading="lazy" class="h-auto w-full">
+                    </a>
+
+                    <div class="mt-auto flex items-center justify-between gap-4">
+                        <p class="text-[11px] tracking-[0.3em] text-muted">A SUV mais robusta da categoria</p>
+                        <a href="#" class="link-conheca">Conheça</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <img src="assets/car-banner-2.png" width="1440" height="590" loading="lazy"
+            class="h-[60vh] min-h-[320px] max-h-[600px] w-full bg-line object-cover">
+
+        <section class="mx-auto max-w-[1280px] px-6 py-16 lg:px-10 lg:py-20">
+            <h2 class="sr-only">Próximos passos</h2>
+
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <a href="#test-drive" class="cta-link group">
+                        Agende um test drive
+                        <svg class="cta-seta" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="m7 3 7 7-7 7" stroke="currentColor" stroke-width="2.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ofertas" class="cta-link group">
+                        Veja ofertas
+                        <svg class="cta-seta" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="m7 3 7 7-7 7" stroke="currentColor" stroke-width="2.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lojas" class="cta-link group">
+                        Encontre uma loja
+                        <svg class="cta-seta" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="m7 3 7 7-7 7" stroke="currentColor" stroke-width="2.5" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <img src="assets/car-banner-3.png" width="1440" height="590" loading="lazy"
+            class="h-[60vh] min-h-[320px] max-h-[600px] w-full bg-line object-cover">
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="src/js/layout.js"></script>
+    <script src="src/js/header.js"></script>
+</body>
+
+</html>
