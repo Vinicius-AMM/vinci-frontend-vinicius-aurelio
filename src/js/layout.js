@@ -11,8 +11,8 @@ const modelos = [
   { nome: 'Modelo V2', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: 'modelo-v2.html', comprar: '#' },
   { nome: 'Modelo V3', imagem: 'assets/megamenu/Model v3 megamenu.png', verMais: '#', comprar: '#' },
   { nome: 'Modelo V4', imagem: 'assets/megamenu/Model v4 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V5', imagem: 'assets/megamenu/Model v1 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V6', imagem: 'assets/megamenu/Model v1 megamenu.png', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V5', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V6', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: '#', comprar: '#' },
 ];
 
 const linksNavegue = [
@@ -57,7 +57,9 @@ let cardsModelos = '';
 modelos.forEach(function (modelo) {
   cardsModelos += `
     <li class="modelo-card">
-      <img src="${modelo.imagem}" width="240" height="120" loading="lazy">
+      <a href="${modelo.verMais}" class="block w-full max-w-[160px]">
+        <img src="${modelo.imagem}" alt="${modelo.nome}" width="240" height="120" loading="lazy">
+      </a>
       <p class="modelo-nome">${modelo.nome}</p>
       <p class="modelo-links"><a href="${modelo.verMais}">Ver mais</a> <a href="${modelo.comprar}">Comprar</a></p>
     </li>
@@ -127,7 +129,7 @@ const headerHTML = `
 
       <a href="index.html" class="flex items-center gap-4">
         <img src="assets/icons/Logo.png" width="30" height="20">
-        <span class="pl-[0.6em] font-display text-sm uppercase tracking-[0.6em] text-ink">Vinci</span>
+        <span class="flex h-[19px] w-[156px] items-center justify-between font-display text-[34px] leading-[19px] uppercase text-ink"><span>V</span><span>i</span><span>n</span><span>c</span><span>i</span></span>
       </a>
 
       <nav class="hidden lg:block">
@@ -171,7 +173,7 @@ const footerHTML = `
 
         <a href="index.html" class="flex items-center gap-4 self-start">
           <img src="assets/icons/Logo.png" width="30" height="20">
-          <span class="pl-[0.6em] font-display text-sm uppercase tracking-[0.6em] text-ink">Vinci</span>
+          <span class="flex h-[19px] w-[156px] items-center justify-between font-display text-[34px] leading-[19px] uppercase text-ink"><span>V</span><span>i</span><span>n</span><span>c</span><span>i</span></span>
         </a>
 
         <div class="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16 lg:gap-24">

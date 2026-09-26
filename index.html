@@ -21,17 +21,16 @@
 
     <main>
 
-        <section class="relative h-[80vh] min-h-[480px] max-h-[760px] overflow-hidden bg-ink">
+        <section class="relative overflow-hidden bg-ink lg:aspect-[1440/637]">
             <img src="assets/car-banner-1%201.png" width="1440" height="637" fetchpriority="high"
-                class="absolute inset-0 h-full w-full object-cover object-[70%_center]">
+                class="block h-auto w-full lg:absolute lg:inset-0 lg:h-full lg:object-cover">
 
-            <div
-                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent lg:bg-linear-to-r lg:from-black/70 lg:via-black/30">
+            <div class="absolute inset-0 hidden bg-linear-to-r from-black/70 via-black/30 to-transparent lg:block">
             </div>
 
             <div
-                class="relative mx-auto flex h-full max-w-[1280px] items-end px-6 pb-16 lg:items-center lg:px-10 lg:pb-0">
-                <div class="max-w-xl">
+                class="relative mx-auto flex max-w-[1280px] px-6 py-12 lg:absolute lg:inset-0 lg:items-center lg:px-10 lg:py-0">
+                <div class="max-w-xl lg:translate-y-12">
                     <h1 class="font-display text-4xl uppercase tracking-[0.02em] text-white lg:text-6xl">
                         Vinci Model V3
                     </h1>
@@ -105,8 +104,7 @@
             </div>
         </section>
 
-        <img src="assets/car-banner-2.png" width="1440" height="590" loading="lazy"
-            class="h-[60vh] min-h-[320px] max-h-[600px] w-full bg-line object-cover">
+        <img src="assets/car-banner-2.png" width="1440" height="593" loading="lazy" class="block h-auto w-full bg-line">
 
         <section class="mx-auto max-w-[1280px] px-6 py-16 lg:px-10 lg:py-20">
             <h2 class="sr-only">Próximos passos</h2>
@@ -139,8 +137,7 @@
             </ul>
         </section>
 
-        <img src="assets/car-banner-3.png" width="1440" height="590" loading="lazy"
-            class="h-[60vh] min-h-[320px] max-h-[600px] w-full bg-line object-cover">
+        <img src="assets/car-banner-3.png" width="1440" height="593" loading="lazy" class="block h-auto w-full bg-line">
 
     </main>
 
