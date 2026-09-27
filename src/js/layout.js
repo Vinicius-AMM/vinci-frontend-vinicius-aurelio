@@ -128,7 +128,7 @@ const headerHTML = `
     <div class="mx-auto flex h-[70px] max-w-[1280px] items-center justify-between px-6 lg:px-10">
 
       <a href="index.html" class="flex items-center gap-4">
-        <img src="assets/icons/Logo.png" width="30" height="20">
+        <img src="assets/icons/Logo.png" alt="Logo Vinci" width="30" height="20">
         <span class="flex h-[19px] w-[156px] items-center justify-between font-display text-[34px] leading-[19px] uppercase text-ink"><span>V</span><span>i</span><span>n</span><span>c</span><span>i</span></span>
       </a>
 
@@ -172,7 +172,7 @@ const footerHTML = `
       <div class="flex flex-col gap-12 lg:flex-row lg:justify-between">
 
         <a href="index.html" class="flex items-center gap-4 self-start">
-          <img src="assets/icons/Logo.png" width="30" height="20">
+          <img src="assets/icons/Logo.png" alt="Logo Vinci" width="30" height="20">
           <span class="flex h-[19px] w-[156px] items-center justify-between font-display text-[34px] leading-[19px] uppercase text-ink"><span>V</span><span>i</span><span>n</span><span>c</span><span>i</span></span>
         </a>
 
