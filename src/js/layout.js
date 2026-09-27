@@ -7,12 +7,12 @@ const linksMenu = [
 ];
 
 const modelos = [
-  { nome: 'Modelo V1', imagem: 'assets/megamenu/Model v1 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V2', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: 'modelo-v2.html', comprar: '#' },
-  { nome: 'Modelo V3', imagem: 'assets/megamenu/Model v3 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V4', imagem: 'assets/megamenu/Model v4 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V5', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: '#', comprar: '#' },
-  { nome: 'Modelo V6', imagem: 'assets/megamenu/Model v2 megamenu.png', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V1', imagem: 'assets/megamenu/Model v1 megamenu.avif', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V2', imagem: 'assets/megamenu/Model v2 megamenu.avif', verMais: 'modelo-v2.html', comprar: '#' },
+  { nome: 'Modelo V3', imagem: 'assets/megamenu/Model v3 megamenu.avif', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V4', imagem: 'assets/megamenu/Model v4 megamenu.avif', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V5', imagem: 'assets/megamenu/Model v2 megamenu.avif', verMais: '#', comprar: '#' },
+  { nome: 'Modelo V6', imagem: 'assets/megamenu/Model v2 megamenu.avif', verMais: '#', comprar: '#' },
 ];
 
 const linksNavegue = [
